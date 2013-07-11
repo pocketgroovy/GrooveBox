@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.miyamoto.groovebox"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cupcake_short"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.miyamoto.groovebox.Opening"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VisualizerWindow"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.VisualizerWindow" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Coldplay"
+            >
+        </activity>
+        <activity
+            android:name=".Radiohead"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Rjd2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Skrillex"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ColdTwit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RadioTwit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SkrillexTwit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Rjd2Twit"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

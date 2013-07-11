@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Groove Box</string>
+    <string name="menu_settings">Settings</string>
+    <string name="coldplay_pic">coldplay_pic</string>
+    <string name="lasfm_logo_pic">lasfm_logo_pic</string>
+    <string name="radiohead_pic">radiohead_pic</string>
+    <string name="skrillex_pic">skrillex_pic</string>
+    <string name="rjd2_pic">rjd2_pic</string>
+    <string name="Splash_title">Groove Box</string>
+    <string name="splash_subTitle">Groove Box</string>
+    <string name="Cold_Music">Fix You  - Datsik Remix</string>
+    <string name="Play_Music">Play</string>
+    <string name="music_length">total length :</string>
+    <string name="current_time">00:00</string>
+    <string name="current_time_label">current time:</string>
+    <string name="Coldplay_remix2">Paradaise - Tiesto Remix</string>
+    <string name="remix1">remix1</string>
+    <string name="remix2">remix2</string>
+    <string name="radio_remix1_title">Lotus Flower - Eco Bootleg Remix</string>
+    <string name="radio_remix2_title">Everything in its Right Place - Gigamesh DiscoTech Remix</string>
+    <string name="rjd2_remix1_title">More Dead - Hundred Strong Remix</string>
+    <string name="rjd2_remix2_title">Nightmares On Wax 70s 80s</string>
+    <string name="skrillex_remix1_title">Alejandro - Skrillex Remix</string>
+    <string name="skrillex_remix2_title">E.T - Skrillex Remix</string>
+    <string name="powered_by">powered by Yoshi Miyamoto</string>
+    <string name="opening">opening image</string>
+    <string name="loading">Loading...</string>
+    <string name="twit">Twitter</string>
+    <string name="twitter">check out the latest twits!</string>
+    <string name="twit_created">created on: </string>
+    <string name="radiohead_logo">radiohead_logo</string>
+    <string name="sk_logo">skrillex_logo</string>
+    <string name="rjd2_logo">rjd2_logo</string>
+    <string name="intro">please click the artist photo to go to the artist\'s page</string>
+    <string name="intro2">Twitter feed is added using JSON</string>
+    <string name="visualizer">Visualizer On!</string>
+    <string name="visualizer_close">close</string>
+
+</resources>
