@@ -61,15 +61,7 @@
         <activity
             android:name=".TwitterTimelineActivity">
         </activity>
-        <activity
-            android:name=".RadioTwit">
-        </activity>
-        <activity
-            android:name=".SkrillexTwit">
-        </activity>
-        <activity
-            android:name=".Rjd2Twit" >
-        </activity>
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="33ac9819ade813fef73731d9b4d4980de0910977" />
