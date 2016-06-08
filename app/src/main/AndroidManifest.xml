@@ -50,33 +50,29 @@
             >
         </activity>
         <activity
-            android:name=".Radiohead"
-            android:screenOrientation="portrait" >
+            android:name=".Radiohead">
         </activity>
         <activity
-            android:name=".Rjd2"
-            android:screenOrientation="portrait" >
+            android:name=".Rjd2" >
         </activity>
         <activity
-            android:name=".Skrillex"
-            android:screenOrientation="portrait" >
+            android:name=".Skrillex">
         </activity>
         <activity
-            android:name=".ColdTwit"
-            android:screenOrientation="portrait" >
+            android:name=".TwitterTimelineActivity">
         </activity>
         <activity
-            android:name=".RadioTwit"
-            android:screenOrientation="portrait" >
+            android:name=".RadioTwit">
         </activity>
         <activity
-            android:name=".SkrillexTwit"
-            android:screenOrientation="portrait" >
+            android:name=".SkrillexTwit">
         </activity>
         <activity
-            android:name=".Rjd2Twit"
-            android:screenOrientation="portrait" >
+            android:name=".Rjd2Twit" >
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="33ac9819ade813fef73731d9b4d4980de0910977" />
     </application>
 
 </manifest>

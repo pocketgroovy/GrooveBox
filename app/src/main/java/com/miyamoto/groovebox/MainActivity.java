@@ -40,13 +40,20 @@ public class MainActivity extends Activity {
 	ImageView imageView;
 	Gallery photos;
 
+
+	@Override
+	public void onRestoreInstanceState(Bundle savedInstanceState){
+		super.onRestoreInstanceState(savedInstanceState);
+
+		Log.d("DEBUG", " restored on rotate");
+	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		imageView = (ImageView) findViewById(R.id.imgArtists);
-		Log.d("TEST", ">>>>>>>>>>>>> Main OnCreate");
-		clickSound = MediaPlayer.create(this, R.raw.click); 
+		clickSound = MediaPlayer.create(this, R.raw.click);
 
 		photos = (Gallery) findViewById(R.id.gallery1);
 
@@ -60,7 +67,7 @@ public class MainActivity extends Activity {
 
 				Toast.makeText(
 						getBaseContext(),
-						"I have selected " + radioStation[position]
+						"Selected " + radioStation[position]
 								+ " page!", Toast.LENGTH_LONG).show();
 				imageView.setVisibility(View.VISIBLE);
 				imageView.setImageResource(artists[position]);
@@ -232,7 +239,6 @@ public class MainActivity extends Activity {
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		finish();
 	}
 
 	

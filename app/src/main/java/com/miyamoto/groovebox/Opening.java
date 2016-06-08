@@ -16,8 +16,16 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import io.fabric.sdk.android.Fabric;
 
 public class Opening extends Activity {
+
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "XOLGV5J3xvZ3KWMyloHTvENyV";
+    private static final String TWITTER_SECRET = "m5t3T6KNI0vsymJpFkrhJEdxKX5HTeZ38OwlSZmRM8v2Ys0KBs";
+
 	private static MediaPlayer mp;
 
 	AnimationDrawable openingAnimation;
@@ -27,6 +35,8 @@ public class Opening extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+		Fabric.with(this, new Twitter(authConfig));
 
 		setContentView(R.layout.opening);
 

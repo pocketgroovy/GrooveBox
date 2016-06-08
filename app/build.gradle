@@ -1,13 +1,28 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
 
 android {
-    compileSdkVersion 17
+    compileSdkVersion 21
     buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.miyamoto.groovebox"
         minSdkVersion 9
-        targetSdkVersion 17
+        targetSdkVersion 21
     }
 
     buildTypes {
@@ -19,7 +34,10 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.android.support:support-v4:21.0.0'
     compile files('libs/signpost-commonshttp4-1.2.1.2.jar')
     compile files('libs/signpost-core-1.2.1.2.jar')
+    compile('com.twitter.sdk.android:twitter:1.13.2@aar') {
+        transitive = true;
+    }
 }

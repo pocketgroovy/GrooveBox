@@ -45,8 +45,6 @@ public class Coldplay extends Activity implements Runnable {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Log.d("LOG", ">>>>>>>>>>>>>>>>  onCreate: ");
-
 		setContentView(R.layout.coldplay);
 
 		Gallery coldPhotos = (Gallery) findViewById(R.id.coldGallery);
@@ -232,9 +230,10 @@ public class Coldplay extends Activity implements Runnable {
 
 	public void onClickTwit(View v) {
 		clickSound.start();
-		Log.d("LOG", ">>>>>>>>>>>>>>>>  onClickTwit: ");
 
-		startActivity(new Intent(Coldplay.this, ColdTwit.class));
+		Intent intent = new Intent(Coldplay.this, TwitterTimelineActivity.class);
+		intent.putExtra("screen_name", "coldplay");
+		startActivity(intent);
 	}
 
 	public void onClickV(View v) {
@@ -291,7 +290,6 @@ public class Coldplay extends Activity implements Runnable {
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		finish();
 	}
 
 	@Override

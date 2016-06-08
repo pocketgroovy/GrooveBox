@@ -26,8 +26,6 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-@SuppressWarnings("deprecation")
-@SuppressLint("SimpleDateFormat")
 public class Skrillex extends Activity implements Runnable {
 	private static Button btnPlay, btnPlay2;
 	private static MediaPlayer mp;
@@ -230,7 +228,9 @@ public class Skrillex extends Activity implements Runnable {
 
 	public void onClickTwit(View v) {
 		clickSound.start();
-		startActivity(new Intent(Skrillex.this, SkrillexTwit.class));
+		Intent intent = new Intent(Skrillex.this, TwitterTimelineActivity.class);
+		intent.putExtra("screen_name", "skrillex");
+		startActivity(intent);
 	}
 
 	public void onClickV(View v) {
@@ -282,7 +282,6 @@ public class Skrillex extends Activity implements Runnable {
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		finish();
 	}
 
 	@Override

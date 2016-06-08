@@ -26,8 +26,6 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-@SuppressWarnings("deprecation")
-@SuppressLint("SimpleDateFormat")
 public class Rjd2 extends Activity implements Runnable {
 	private static Button btnPlay, btnPlay2;
 	private static MediaPlayer mp;
@@ -232,8 +230,9 @@ public class Rjd2 extends Activity implements Runnable {
 
 	public void onClickTwit(View v) {
 		clickSound.start();
-
-		startActivity(new Intent(Rjd2.this, Rjd2Twit.class));
+		Intent intent = new Intent(Rjd2.this, TwitterTimelineActivity.class);
+		intent.putExtra("screen_name", "rjd2");
+		startActivity(intent);
 	}
 
 	public void onClickV(View v) {
@@ -288,9 +287,6 @@ public class Rjd2 extends Activity implements Runnable {
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-
-		finish();
-
 	}
 
 	@Override
